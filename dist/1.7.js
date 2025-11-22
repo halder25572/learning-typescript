@@ -24,5 +24,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
         ...mentors2
     };
     console.log(mentorList);
+    // rest operator
+    const greetFriends = (...friends) => {
+        friends.forEach((friends) => console.log(`Hi ${friends}`));
+    };
+    const res = greetFriends("Abul", "Babul", "Lablu", "Manik");
+    console.log(res);
 }
 //# sourceMappingURL=1.7.js.map

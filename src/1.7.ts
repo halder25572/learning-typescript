@@ -29,5 +29,15 @@ const mentorList = {
 }
 console.log(mentorList);
 
+// rest operator
+const greetFriends = (...friends: string[]) => {
+    friends.forEach((friends: string) => console.log(`Hi ${friends}`));
+}
+
+const res = greetFriends("Abul", "Babul", "Lablu", "Manik");
+console.log(res);
+
+
+
 
 }
